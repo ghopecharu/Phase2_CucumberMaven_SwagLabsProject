@@ -1,0 +1,4 @@
+stepdefs\BaseClass.class
+stepdefs\TestRunner.class
+stepdefs\LoginSteps.class
+stepdefs\ProductSelectionSteps.class

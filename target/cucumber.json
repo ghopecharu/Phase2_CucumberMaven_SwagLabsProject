@@ -1,0 +1,260 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-25T17:37:45.572Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2141316300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify that when user enters correct user name and password they should be able to login successfully",
+        "description": "",
+        "id": "login-feature;verify-that-when-user-enters-correct-user-name-and-password-they-should-be-able-to-login-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 33900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1702106000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User has opened the SwagLabs application",
+            "match": {
+              "location": "LoginSteps.user_has_opened_the_swaglabs_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124755600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters the username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.user_enters_the_username_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78129100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters the password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.user_enters_the_password_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139619200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on LOGIN button",
+            "match": {
+              "location": "LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30381900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be landed on the swaglabs product Page",
+            "match": {
+              "location": "LoginSteps.user_should_be_landed_on_the_swaglabs_product_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@PositiveLogin"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-25T17:37:49.831Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1458206000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify that when user enters incorrect user name and password they should see the error message on login page",
+        "description": "",
+        "id": "login-feature;verify-that-when-user-enters-incorrect-user-name-and-password-they-should-see-the-error-message-on-login-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 34000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1516394700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User has opened the SwagLabs application",
+            "match": {
+              "location": "LoginSteps.user_has_opened_the_swaglabs_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129348000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters the username \"charu@xyz.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "charu@xyz.com",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.user_enters_the_username_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80790300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters the password \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.user_enters_the_password_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68305500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on LOGIN button",
+            "match": {
+              "location": "LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30688100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User should see the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginSteps.user_should_see_the_error_message_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@NegativeLogin"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "  Description: This feature will be used to login to SwagLabs Application",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
