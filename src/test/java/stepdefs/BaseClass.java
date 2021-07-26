@@ -20,13 +20,13 @@ public class BaseClass {
 	
 	@After
 	public void teardown() {
-		 WebElement OpenMenu = driver.findElement(By.xpath("//*[@id='react-burger-menu-btn']"));
+		// WebElement OpenMenu = driver.findElement(By.xpath("//*[@id='react-burger-menu-btn']"));
 		 OpenMenu.click();  
-		 WebElement logout = driver.findElement(By.xpath("//*[@id='logout_sidebar_link']"));
+		// WebElement logout = driver.findElement(By.xpath("//*[@id='logout_sidebar_link']"));
 		 logout.click(); 
 		 
 		
-	//driver.quit();
+	driver.quit();
 	 }
 	
 }
