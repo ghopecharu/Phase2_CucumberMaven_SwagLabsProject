@@ -64,6 +64,9 @@ public class ProductSelectionSteps {
 			    i++;
 			
 	    }
+	  }
+	  @Then("^Products added successfully to the cart$")
+	  public void products_added_successfully_to_the_cart() {
 		       
 		       WebElement addtoCartIcon = driver.findElement(By.xpath("//*[@class='shopping_cart_link']"));
 				  addtoCartIcon.click();       
