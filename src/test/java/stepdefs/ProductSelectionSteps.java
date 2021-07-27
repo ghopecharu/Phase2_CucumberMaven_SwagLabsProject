@@ -69,7 +69,14 @@ public class ProductSelectionSteps {
 	  public void products_added_successfully_to_the_cart() {
 		       
 		       WebElement addtoCartIcon = driver.findElement(By.xpath("//*[@class='shopping_cart_link']"));
-				  addtoCartIcon.click();       
+		       addtoCartIcon.click();  
+		  
+		  //User logout xpath.
+		   WebElement OpenMenu = driver.findElement(By.xpath("//*[@id='react-burger-menu-btn']"));
+	           OpenMenu.click();  
+		   WebElement logout = driver.findElement(By.xpath("//*[@id='logout_sidebar_link']"));
+		   logout.click(); 
+		 
 	  
 	  }
 }
